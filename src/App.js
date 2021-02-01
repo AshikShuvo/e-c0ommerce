@@ -1,5 +1,6 @@
 import { Route, Router, Switch } from 'react-router-dom';
 import './App.css';
+import Header from './components/header/Header.component';
 import HomePage from './pages/homepage/HomePage.component';
 import Shop from './pages/shop/Shop.component';
 const  Hats=()=>{
@@ -8,6 +9,7 @@ const  Hats=()=>{
 function App() {
   return (
     <body>
+      <Header/>
       <Switch>
         <Route exact={true} path = "/" component={HomePage}/>
         <Route  path= "/shop" component={Shop} />
