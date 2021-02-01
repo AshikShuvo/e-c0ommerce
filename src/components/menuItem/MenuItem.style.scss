@@ -1,6 +1,5 @@
 .menu-item {
     min-width: 30%;
-    height: 240px;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
@@ -20,6 +19,14 @@
         opacity: 0.9;
       }
     }
+    &.small {
+      height: 350px;
+    }
+  
+    &.big {
+      height: 400px;
+    }
+  
   
     &:first-child {
       margin-right: 7.5px;
